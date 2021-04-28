@@ -1,0 +1,58 @@
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+  
+  button {
+    padding: 0;
+    border: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul {
+    margin: 0;
+    padding: 0;
+   }
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+  
+  address {
+    font-style: normal;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }

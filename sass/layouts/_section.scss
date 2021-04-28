@@ -1,0 +1,40 @@
+.hero {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #c4c4c4;
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img2/hero-img.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .forces {
+    padding-top: 94px;
+    background: #fff;
+  }
+
+  .wedo {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: #fff;
+  }
+
+  .team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: var(--light-background);
+  }
+
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .projects {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    background-color: #fff;
+  }
+
+  

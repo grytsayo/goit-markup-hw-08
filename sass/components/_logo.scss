@@ -1,0 +1,40 @@
+.header__logo {
+    width: 145px;
+    height: 30px;
+  }
+  
+  .header__logostart {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+  }
+  
+  .header__logoend {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #000000;
+  }
+
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+  
+  .footer__logostart {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+  }
+  
+  .footer__logoend {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #fff;
+  }

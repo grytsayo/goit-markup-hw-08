@@ -1,0 +1,33 @@
+.wedo-menu {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .wedo-menu__work {
+    position: relative;
+  
+  
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+  .wedo-menu__details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    pointer-events: none
+  }
+  
+  .wedo-menu__header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--dark-bg-text-color);
+  }

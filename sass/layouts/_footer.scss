@@ -1,0 +1,25 @@
+.footer {
+    height: 252px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--dark-background);
+  }
+
+.footer-menu__address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 9px;
+  color: var(--dark-bg-text-color);
+}
+
+.footer-menu__contacts {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+
+&:not(:last-child) {
+  margin-bottom: 9px;
+}
+}
