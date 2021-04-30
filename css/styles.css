@@ -213,10 +213,27 @@ address {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
 }
 
-.hero_container {
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.hero__container {
   text-align: center;
 }
 
@@ -454,6 +471,19 @@ address {
   text-transform: uppercase;
   color: var(--title-color);
   margin-bottom: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .forces__title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .forces__title {
+    text-align: left;
+  }
 }
 
 .job-title {
@@ -596,15 +626,51 @@ modal-form__.span-link {
 .advantages {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: 0;
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    margin-left: -30px;
+    margin-bottom: 0;
+  }
 }
 
 .advantages__force {
-  flex-basis: calc((100% - 30px * 4) / 4);
-  margin-left: 30px;
-  margin-top: 0;
+  flex-basis: calc((100% - 30px * 1) / 1);
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 768.99px) {
+  .advantages__force:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__force {
+    flex-basis: calc((100% - 30px * 2) / 2);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 1199.99px) {
+  .advantages__force:nth-child(-n + 3) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages__force {
+    flex-basis: calc((100% - 30px * 4) / 4);
+    margin-left: 30px;
+  }
 }
 
 .team {
@@ -639,14 +705,12 @@ modal-form__.span-link {
 }
 
 .hero {
-  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-right: auto;
-  margin-left: auto;
   background-color: #c4c4c4;
   background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img2/hero-img.jpg);
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .forces {
@@ -747,7 +811,7 @@ modal-form__.span-link {
 .advantages__icon0::before {
   content: '';
   display: inline-block;
-  width: 270px;
+  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
@@ -756,10 +820,22 @@ modal-form__.span-link {
   background-image: url(../img2/antenna.svg);
 }
 
+@media screen and (min-width: 768px) {
+  .advantages__icon0::before {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages__icon0::before {
+    max-width: 270px;
+  }
+}
+
 .advantages__icon1::before {
   content: '';
   display: inline-block;
-  width: 270px;
+  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
@@ -768,10 +844,22 @@ modal-form__.span-link {
   background-image: url(../img2/clock.svg);
 }
 
+@media screen and (min-width: 768px) {
+  .advantages__icon1::before {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages__icon1::before {
+    max-width: 270px;
+  }
+}
+
 .advantages__icon2::before {
   content: '';
   display: inline-block;
-  width: 270px;
+  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
@@ -780,16 +868,40 @@ modal-form__.span-link {
   background-image: url(../img2/diagram.svg);
 }
 
+@media screen and (min-width: 768px) {
+  .advantages__icon2::before {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages__icon2::before {
+    max-width: 270px;
+  }
+}
+
 .advantages__icon3::before {
   content: '';
   display: inline-block;
-  width: 270px;
+  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--light-background);
   background-image: url(../img2/astronaut.svg);
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__icon3::before {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages__icon3::before {
+    max-width: 270px;
+  }
 }
 
 .modal-form {
