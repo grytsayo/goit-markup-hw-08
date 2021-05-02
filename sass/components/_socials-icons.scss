@@ -14,10 +14,12 @@
     transition-timing-function:var(--timing-function);
   
   &:hover,
-  &:focus {
+  &:focus   {
      background-color: var(--accent-color);
+     
   }
 }
+
   
   .social-icons__icon {
     width: 20px;
@@ -27,15 +29,10 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
-  &:hover,
-  &:focus {
-    fill: #fff;
-  }
-}
-  
   .social-icons__item + .social-icons__item {
     margin-left: 10px;
   }
+}
 
   .footer-socials {
     flex-basis:calc((50% - 45px) / 2);
