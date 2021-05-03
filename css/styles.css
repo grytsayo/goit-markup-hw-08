@@ -454,9 +454,14 @@ address {
   line-height: 1.36;
   text-transform: uppercase;
   text-align: center;
-  width: 696px;
   margin: 0 auto 30px;
   color: var(--dark-bg-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+  }
 }
 
 .forces__title {
