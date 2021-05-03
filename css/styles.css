@@ -354,11 +354,7 @@ address {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icons__icon:hover, .social-icons__icon:focus {
-  fill: #fff;
-}
-
-.social-icons__item + .social-icons__item {
+.social-icons__icon .social-icons__item + .social-icons__item {
   margin-left: 10px;
 }
 
@@ -1075,6 +1071,7 @@ modal-form__.span-link {
 
 .wedo-menu {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 50px;
 }
 
