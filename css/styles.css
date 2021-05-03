@@ -720,6 +720,12 @@ modal-form__.span-link {
   background: #fff;
 }
 
+@media screen and (max-width: 1199px) {
+  .wedo {
+    display: none;
+  }
+}
+
 .team-section {
   padding-top: 94px;
   padding-bottom: 94px;
