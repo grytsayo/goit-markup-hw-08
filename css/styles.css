@@ -716,9 +716,14 @@ modal-form__.span-link {
 }
 
 .forces {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  .forces {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .wedo {
@@ -734,9 +739,16 @@ modal-form__.span-link {
 }
 
 .team-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: var(--light-background);
+}
+
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients {
@@ -821,7 +833,7 @@ modal-form__.span-link {
   content: '';
   display: inline-block;
   width: 100%;
-  height: 100%;
+  height: 120px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;
@@ -833,7 +845,7 @@ modal-form__.span-link {
   content: '';
   display: inline-block;
   width: 100%;
-  height: 100%;
+  height: 120px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;
@@ -845,7 +857,7 @@ modal-form__.span-link {
   content: '';
   display: inline-block;
   width: 100%;
-  height: 100%;
+  height: 120px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;
@@ -857,7 +869,7 @@ modal-form__.span-link {
   content: '';
   display: inline-block;
   width: 100%;
-  height: 100%;
+  height: 120px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;

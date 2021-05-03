@@ -9,9 +9,12 @@
   }
 
   .forces {
-    padding-top: 94px;
-    padding-bottom: 94px;
     background: #fff;
+
+    @media screen and (min-width: 1200px){
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
 
   .wedo {
@@ -25,9 +28,15 @@
   }
 
   .team-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: var(--light-background);
+
+    @media screen and (min-width: 1200px){
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+
   }
 
   .clients {
