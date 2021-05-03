@@ -725,23 +725,22 @@ modal-form__.span-link {
   margin-left: -30px;
 }
 
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: #c4c4c4;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 767px) {
   .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    background-color: #c4c4c4;
     background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img2/bg-img-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    padding-left: 204px;
-    padding-right: 204px;
     background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img2/bg-img-tablet.jpg);
   }
 }
