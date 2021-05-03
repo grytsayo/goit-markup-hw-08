@@ -209,6 +209,7 @@ address {
 }
 
 .container {
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -625,33 +626,25 @@ modal-form__.span-link {
 }
 
 .advantages {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: 60px;
 }
 
 @media screen and (min-width: 768px) {
   .advantages {
+    display: flex;
+    flex-wrap: wrap;
     margin-left: -30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .advantages {
-    margin-left: -30px;
     margin-bottom: 0;
   }
 }
 
 .advantages__force {
-  flex-basis: calc((100% - 30px * 1) / 1);
   box-sizing: border-box;
-}
-
-@media screen and (max-width: 768.99px) {
-  .advantages__force:not(:last-child) {
-    margin-bottom: 30px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -661,16 +654,21 @@ modal-form__.span-link {
   }
 }
 
-@media screen and (max-width: 1199.99px) {
-  .advantages__force:nth-child(-n + 3) {
+@media screen and (min-width: 1200px) {
+  .advantages__force {
+    flex-basis: calc((100% - 30px * 4) / 4);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantages__force:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .advantages__force {
-    flex-basis: calc((100% - 30px * 4) / 4);
-    margin-left: 30px;
+@media screen and (max-width: 1199px) {
+  .advantages__force:nth-child(-n + 3) {
+    margin-bottom: 30px;
   }
 }
 
@@ -711,11 +709,11 @@ modal-form__.span-link {
   background-color: #c4c4c4;
   background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img2/hero-img.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
 }
 
 .forces {
   padding-top: 94px;
+  padding-bottom: 94px;
   background: #fff;
 }
 
@@ -818,8 +816,8 @@ modal-form__.span-link {
 .advantages__icon0::before {
   content: '';
   display: inline-block;
-  width: 450px;
-  height: 120px;
+  width: 100%;
+  height: 100%;
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;
@@ -827,23 +825,11 @@ modal-form__.span-link {
   background-image: url(../img2/antenna.svg);
 }
 
-@media screen and (min-width: 768px) {
-  .advantages__icon0::before {
-    max-width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantages__icon0::before {
-    max-width: 270px;
-  }
-}
-
 .advantages__icon1::before {
   content: '';
   display: inline-block;
-  width: 450px;
-  height: 120px;
+  width: 100%;
+  height: 100%;
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;
@@ -851,23 +837,11 @@ modal-form__.span-link {
   background-image: url(../img2/clock.svg);
 }
 
-@media screen and (min-width: 768px) {
-  .advantages__icon1::before {
-    max-width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantages__icon1::before {
-    max-width: 270px;
-  }
-}
-
 .advantages__icon2::before {
   content: '';
   display: inline-block;
-  width: 450px;
-  height: 120px;
+  width: 100%;
+  height: 100%;
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;
@@ -875,40 +849,16 @@ modal-form__.span-link {
   background-image: url(../img2/diagram.svg);
 }
 
-@media screen and (min-width: 768px) {
-  .advantages__icon2::before {
-    max-width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantages__icon2::before {
-    max-width: 270px;
-  }
-}
-
 .advantages__icon3::before {
   content: '';
   display: inline-block;
-  width: 450px;
-  height: 120px;
+  width: 100%;
+  height: 100%;
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--light-background);
   background-image: url(../img2/astronaut.svg);
-}
-
-@media screen and (min-width: 768px) {
-  .advantages__icon3::before {
-    max-width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantages__icon3::before {
-    max-width: 270px;
-  }
 }
 
 .modal-form {
