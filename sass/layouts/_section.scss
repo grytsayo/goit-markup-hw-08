@@ -1,11 +1,30 @@
 .hero {
 
+@media screen and (max-width: 767px){
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img2/bg-img-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media screen and (min-width: 768px){
+  padding-top: 118px;
+  padding-bottom: 118px;
+  padding-left: 204px;
+  padding-right: 204px;
+  background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img2/bg-img-tablet.jpg);
+
+}
+
+  @media screen and (min-width: 1200px){
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: #c4c4c4;
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img2/hero-img.jpg);
-    background-repeat: no-repeat;
-    // background-size: 100%;
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img2/bg-img-desktop.jpg);
+    // background-size: 100%; 
+  }
+
   }
 
   .forces {
@@ -18,13 +37,10 @@
   }
 
   .wedo {
+    background: #fff;
     @media screen and (max-width: 1199px){
       display: none;
     }
-
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background: #fff;
   }
 
   .team-section {
