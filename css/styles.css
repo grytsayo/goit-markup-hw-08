@@ -141,20 +141,8 @@ body {
   color: var(--main-text-color);
 }
 
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--title-color);
-}
-
 html {
   box-sizing: border-box;
-}
-
-body {
-  outline-color: aqua;
 }
 
 *,
@@ -453,6 +441,20 @@ address {
   color: #fff;
 }
 
+.section-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.178;
+  text-align: center;
+  color: var(--title-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+  }
+}
+
 .hero__title {
   font-weight: 900;
   font-size: 44px;
@@ -676,22 +678,35 @@ modal-form__.span-link {
   }
 }
 
-.team {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: 0;
+@media screen and (min-width: 768px) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .team__mate {
-  flex-basis: calc((100% - 30px * 4) / 4);
-  margin-left: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: center;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  .team__mate {
+    flex-basis: calc((100% - 30px * 2) / 2);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__mate {
+    flex-basis: calc((100% - 30px * 4) / 4);
+    margin-top: 50px;
+  }
 }
 
 .project {
@@ -741,6 +756,7 @@ modal-form__.span-link {
 .team-section {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-top: 60px;
   background: var(--light-background);
 }
 
