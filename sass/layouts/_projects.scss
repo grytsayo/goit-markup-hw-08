@@ -1,23 +1,4 @@
-.pro-item {
-  flex-basis: calc((100% - 30px * 3) / 3);
-  margin-left: 30px;
-  margin-top: 30px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-  transition: box-shadow var(--transition-duration) var(--timing-function);
 
-&:hover,
-&:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-&:hover .pro-item__img::before,
-&:focus .pro-item__img::before {
-  opacity: 1;
-  transform: translateY(0);
-}
-}
 
 .pro-item__img {
   position: relative;
