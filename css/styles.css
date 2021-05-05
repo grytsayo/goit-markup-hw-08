@@ -237,9 +237,28 @@ address {
 
 .site-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .site-list {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-list {
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-list {
+    margin-bottom: 50px;
+  }
 }
 
 .site-list__item:not(:last-child) {
@@ -835,9 +854,14 @@ modal-form__.span-link {
 }
 
 .projects {
-  padding-bottom: 94px;
-  padding-top: 94px;
   background-color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  .projects {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .footer {
