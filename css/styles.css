@@ -357,6 +357,11 @@ address {
   background-color: var(--accent-color);
 }
 
+.social-icons__link:hover .social-icons__icon,
+.social-icons__link:focus .social-icons__icon {
+  fill: #fff;
+}
+
 .social-icons__icon {
   width: 20px;
   height: 20px;

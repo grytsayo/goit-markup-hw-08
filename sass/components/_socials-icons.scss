@@ -16,7 +16,11 @@
   &:hover,
   &:focus   {
      background-color: var(--accent-color);
-     
+  }
+
+  &:hover .social-icons__icon,
+  &:focus .social-icons__icon {
+    fill: #fff;
   }
 }
 
