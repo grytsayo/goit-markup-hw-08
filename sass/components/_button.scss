@@ -45,23 +45,21 @@
 }
 
   .footer-socials__button {
+    color:var(--dark-bg-text-color);
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 
     @media screen and (max-width: 1199px){
-      color:var(--dark-bg-text-color);
-      width: 200px;
-      height: 50px;
       margin-top: 20px;
-      background: #2196F3;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      border-radius: 4px;
     }
 
     @media screen and (min-width: 1200px){
       margin-left: 20px;
     }
-   
-
-    }
+  }
 
     .modal__close-button {
       position: absolute;

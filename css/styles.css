@@ -306,15 +306,18 @@ address {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.footer-socials__button {
+  color: var(--dark-bg-text-color);
+  width: 200px;
+  height: 50px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 1199px) {
   .footer-socials__button {
-    color: var(--dark-bg-text-color);
-    width: 200px;
-    height: 50px;
     margin-top: 20px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
   }
 }
 
@@ -1152,6 +1155,10 @@ modal-form__.span-link {
 }
 
 .footer-socials__input {
+  height: 50px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 16px;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -1166,10 +1173,6 @@ modal-form__.span-link {
 @media screen and (max-width: 1199px) {
   .footer-socials__input {
     width: 450px;
-    height: 50px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    padding-left: 16px;
   }
 }
 
