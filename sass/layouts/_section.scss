@@ -71,4 +71,16 @@
     }
   }
 
-  
+  .footer {
+    height: 603px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 60px;
+    background-color: var(--dark-background);
+
+    @media screen and (min-width: 1200px){
+      height: 252px;
+    }
+ 
+
+  }

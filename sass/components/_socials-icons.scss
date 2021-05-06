@@ -38,16 +38,6 @@
   }
 }
 
-  .footer-socials {
-    flex-basis:calc((50% - 45px) / 2);
-    margin-left: 30px;
-  
-  &:last-child {
-    flex-basis:calc(50% - 15px);
-    margin-left: 0;
-    }
-  }
-  
   .footer-socials__title {
     font-weight: 700;
     font-size: 14px;
