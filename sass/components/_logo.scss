@@ -1,6 +1,12 @@
 .header__logo {
-    width: 145px;
-    height: 30px;
+  width: 145px;
+  height: 30px;
+
+  @media screen and (max-width:1199px){
+    width: 134px;
+    height: 28px;
+  }
+
   }
   
   .header__logostart {
@@ -9,6 +15,11 @@
     font-size: 26px;
     line-height: 1.19;
     color: var(--accent-color);
+
+    @media screen and (max-width: 1199px){
+      font-size: 24px;
+      line-height: 1.167;
+    }
   }
   
   .header__logoend {
@@ -17,6 +28,11 @@
     font-size: 26px;
     line-height: 1.19;
     color: #000000;
+
+    @media screen and (max-width: 1199px){
+      font-size: 24px;
+      line-height: 1.167;
+    }
   }
 
   .footer__logo {
@@ -29,6 +45,11 @@
     font-size: 26px;
     line-height: 1.19;
     color: var(--accent-color);
+
+    @media screen and (max-width: 1199px){
+      font-size: 24px;
+      line-height: 1.167;
+    }
   }
   
   .footer__logoend {
@@ -37,4 +58,9 @@
     font-size: 26px;
     line-height: 1.19;
     color: #fff;
+
+    @media screen and (max-width: 1199px){
+      font-size: 24px;
+      line-height: 1.167;
+    }
   }

@@ -235,6 +235,12 @@ address {
   align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+}
+
 .site-list {
   display: flex;
   flex-wrap: wrap;
@@ -430,6 +436,13 @@ address {
   height: 30px;
 }
 
+@media screen and (max-width: 1199px) {
+  .header__logo {
+    width: 134px;
+    height: 28px;
+  }
+}
+
 .header__logostart {
   font-family: Raleway;
   font-weight: 700;
@@ -438,12 +451,26 @@ address {
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .header__logostart {
+    font-size: 24px;
+    line-height: 1.167;
+  }
+}
+
 .header__logoend {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: #000000;
+}
+
+@media screen and (max-width: 1199px) {
+  .header__logoend {
+    font-size: 24px;
+    line-height: 1.167;
+  }
 }
 
 .footer__logo {
@@ -458,12 +485,26 @@ address {
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .footer__logostart {
+    font-size: 24px;
+    line-height: 1.167;
+  }
+}
+
 .footer__logoend {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: #fff;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__logoend {
+    font-size: 24px;
+    line-height: 1.167;
+  }
 }
 
 .section-title {
@@ -563,6 +604,13 @@ address {
   background-color: #fff;
 }
 
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
 .header-menu__text,
 .header-cont__text {
   font-weight: 500;
@@ -617,8 +665,7 @@ address {
   }
 }
 
-.header-menu__link,
-.header-cont__link {
+.header-menu__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -628,11 +675,26 @@ address {
   transition-timing-function: var(--timing-function);
 }
 
-.header-menu__link:hover, .header-menu__link:focus, .header-menu__link:hover, .header-menu__link:focus,
-.header-cont__link:hover,
-.header-cont__link:focus,
-.header-cont__link:hover,
-.header-cont__link:focus {
+.header-menu__link:hover, .header-menu__link:focus, .header-menu__link:hover, .header-menu__link:focus {
+  color: var(--accent-color);
+}
+
+.header-cont__link {
+  display: flex;
+  align-items: center;
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+@media screen and (min-width: 1200px) {
+  .header-cont__link {
+    padding-top: 32px;
+    padding-bottom: 29px;
+  }
+}
+
+.header-cont__link:hover, .header-cont__link:focus, .header-cont__link:hover, .header-cont__link:focus {
   color: var(--accent-color);
 }
 
@@ -961,6 +1023,11 @@ modal-form__.span-link {
   }
 }
 
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
 .header--current::after {
   content: "";
   height: 4px;
@@ -979,27 +1046,51 @@ modal-form__.span-link {
   fill: currentColor;
 }
 
-.header-menu,
+.header-menu {
+  display: flex;
+}
+
 .header-cont {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-content: stretch;
-  justify-content: space-evenly;
-  align-items: baseline;
 }
 
-.header-cont {
-  margin-left: auto;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-cont {
+    margin-left: 84px;
+  }
 }
 
-.header__item:first-child {
+.header-menu__item:first-child {
   margin-left: 93px;
 }
 
-.header__item:not(:last-child),
-.header__item:not(:last-child) {
+@media screen and (max-width: 1199px) {
+  .header-menu__item:first-child {
+    margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-cont__item:first-child {
+    margin-left: 305px;
+  }
+}
+
+.header-menu__item:not(:last-child) {
   margin-right: 50px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-cont__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-cont__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .advantages__icon0::before {
@@ -1229,7 +1320,7 @@ modal-form__.span-link {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 450px;
+  max-width: 450px;
   height: 609px;
   padding: 40px;
   text-align: center;
