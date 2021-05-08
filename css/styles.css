@@ -623,6 +623,13 @@ address {
   color: var(--main-text-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-cont__text {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
 .pro-item__text {
   position: absolute;
   width: 322px;
@@ -675,7 +682,7 @@ address {
   transition-timing-function: var(--timing-function);
 }
 
-.header-menu__link:hover, .header-menu__link:focus, .header-menu__link:hover, .header-menu__link:focus {
+.header-menu__link:hover, .header-menu__link:focus {
   color: var(--accent-color);
 }
 
@@ -694,7 +701,7 @@ address {
   }
 }
 
-.header-cont__link:hover, .header-cont__link:focus, .header-cont__link:hover, .header-cont__link:focus {
+.header-cont__link:hover, .header-cont__link:focus {
   color: var(--accent-color);
 }
 
@@ -725,6 +732,117 @@ address {
 
 modal-form__.span-link {
   margin-left: 8.38px;
+}
+
+.mobile-btn {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-btn {
+    display: none;
+  }
+}
+
+.mobile-btn__icons {
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-btn__close {
+  display: none;
+}
+
+.is-open .mobile-btn__close {
+  display: block;
+}
+
+.is-open .mobile-btn__open {
+  display: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  padding: 48px 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  transition: right 0.5s;
+}
+
+.mobile-menu.is-open {
+  right: 0;
+}
+
+@media screen and (man-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu__nav {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.mobile-menu__link {
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: var(--accent-color);
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-cont__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile-menu__cont {
+  margin-top: 302px;
+}
+
+.mobile-cont__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+.mobile-menu__social-list {
+  display: flex;
+  margin-top: 64px;
+}
+
+.mobile-menu__socials {
+  list-style: none;
+  color: var(--accent-color);
+}
+
+.mobile-menu__socials:not(:last-child) {
+  margin-right: 20px;
 }
 
 .advantages {

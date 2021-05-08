@@ -8,6 +8,11 @@
 
 .header-cont__text {
  color: var(--main-text-color);
+
+ @media screen and (min-width: 768px) and (max-width: 1199px){
+   font-size: 12px;
+   line-height: 1.17;
+ }
 }
 
 .pro-item__text   {  
