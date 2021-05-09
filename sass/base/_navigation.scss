@@ -19,7 +19,7 @@
     @media screen and (min-width: 768px) and (max-width: 1199px){
       justify-content: center;
       margin-bottom: 30px;
-      margin-top: 60px;
+      // margin-top: 60px;
     }
 
     @media screen and (min-width: 1200px){
@@ -32,19 +32,12 @@
     margin-right: 8px;
   }
 
-  .site-list__item:nth-child(-n + 3) {
+  .site-list__item {
 
     @media screen and (max-width: 767px){
       margin-bottom: 15px;
-      margin-top: 60px;
+      // margin-top: 60px;
     }
-  }
-
-  .site-list__item:nth-child(n + 4) {
-
-    @media screen and (max-width: 767px){
-      margin-bottom: 40px;
-     }
   }
 
   

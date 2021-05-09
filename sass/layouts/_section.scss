@@ -64,11 +64,13 @@
   }
 
   .projects {
+    padding-bottom: 94px;
+    padding-top: 94px; 
     background-color: #fff;
 
-    @media screen and (min-width: 1200px){
-      padding-bottom: 94px;
-      padding-top: 94px; 
+    @media screen and (max-width: 767px){
+      padding-bottom: 60px;
+      padding-top: 60px; 
     }
   }
 
@@ -76,8 +78,7 @@
     height: 603px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-top: 60px;
-    background-color: var(--dark-background);
+     background-color: var(--dark-background);
 
     @media screen and (min-width: 768px){
       grid-auto-flow: row;

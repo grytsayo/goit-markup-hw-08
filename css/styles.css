@@ -256,7 +256,6 @@ address {
   .site-list {
     justify-content: center;
     margin-bottom: 30px;
-    margin-top: 60px;
   }
 }
 
@@ -272,15 +271,8 @@ address {
 }
 
 @media screen and (max-width: 767px) {
-  .site-list__item:nth-child(-n + 3) {
+  .site-list__item {
     margin-bottom: 15px;
-    margin-top: 60px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .site-list__item:nth-child(n + 4) {
-    margin-bottom: 40px;
   }
 }
 
@@ -1101,13 +1093,15 @@ modal-form__.span-link {
 }
 
 .projects {
+  padding-bottom: 94px;
+  padding-top: 94px;
   background-color: #fff;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 767px) {
   .projects {
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
   }
 }
 
@@ -1115,7 +1109,6 @@ modal-form__.span-link {
   height: 603px;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-top: 60px;
   background-color: var(--dark-background);
 }
 
@@ -1570,6 +1563,12 @@ modal-form__.span-link {
 .clients__item:hover .clients__icon,
 .clients__item:focus .clients__icon {
   fill: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .project {
+    margin-top: 25px;
+  }
 }
 
 .pro-item__img {
