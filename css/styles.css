@@ -1097,7 +1097,7 @@ modal-form__.span-link {
   background-color: #fff;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .projects {
     padding-bottom: 60px;
     padding-top: 60px;
