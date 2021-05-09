@@ -1452,7 +1452,8 @@ modal-form__.span-link {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  max-width: 450px;
+  width: 100%;
+  max-width: 528px;
   height: 609px;
   padding: 40px;
   text-align: center;
@@ -1463,10 +1464,10 @@ modal-form__.span-link {
   transition: transform var(--transition-duration) ease-in-out 300ms;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .modal {
-    width: 528px;
-    height: 581px;
+    width: 100%;
+    max-width: 450px;
   }
 }
 
