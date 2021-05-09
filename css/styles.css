@@ -252,7 +252,7 @@ address {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .site-list {
     justify-content: center;
     margin-bottom: 30px;
@@ -263,6 +263,7 @@ address {
 @media screen and (min-width: 1200px) {
   .site-list {
     margin-bottom: 50px;
+    justify-content: center;
   }
 }
 
@@ -274,6 +275,12 @@ address {
   .site-list__item:nth-child(-n + 3) {
     margin-bottom: 15px;
     margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-list__item:nth-child(n + 4) {
+    margin-bottom: 40px;
   }
 }
 
@@ -853,10 +860,6 @@ modal-form__.span-link {
   margin-right: 20px;
 }
 
-.advantages {
-  margin-top: 60px;
-}
-
 @media screen and (min-width: 768px) {
   .advantages {
     display: flex;
@@ -957,6 +960,12 @@ modal-form__.span-link {
   transform: translateY(0);
 }
 
+@media screen and (max-width: 767px) {
+  .pro-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .pro-item {
     flex-basis: calc((100% - 30px * 2) / 2);
@@ -1003,6 +1012,10 @@ modal-form__.span-link {
   .footer-socials {
     flex-basis: calc((50% - 45px) / 2);
     margin-left: 30px;
+    margin-bottom: 0;
+  }
+  .footer-socials:not(:last-child) {
+    margin-bottom: 0;
   }
   .footer-socials:last-child {
     flex-basis: calc(50% - 15px);
@@ -1040,12 +1053,14 @@ modal-form__.span-link {
 
 .forces {
   background: #fff;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .forces {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1060,16 +1075,15 @@ modal-form__.span-link {
 }
 
 .team-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-top: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background: var(--light-background);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .team-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 

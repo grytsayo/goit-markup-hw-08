@@ -23,10 +23,12 @@
 
   .forces {
     background: #fff;
+    padding-top: 94px;
+    padding-bottom: 94px;
 
-    @media screen and (min-width: 1200px){
-      padding-top: 94px;
-      padding-bottom: 94px;
+    @media screen and (max-width: 1199px){
+      padding-top: 60px;
+      padding-bottom: 60px;
     }
   }
 
@@ -38,14 +40,13 @@
   }
 
   .team-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin-top: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     background: var(--light-background);
 
-    @media screen and (min-width: 1200px){
-      padding-top: 94px;
-      padding-bottom: 94px;
+    @media screen and (max-width: 1199px){
+      padding-top: 60px;
+      padding-bottom: 60px;
     }
 
   }
