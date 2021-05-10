@@ -815,7 +815,7 @@ modal-form__.span-link {
 }
 
 .mobile-menu__item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .mobile-cont__tel {
@@ -827,7 +827,7 @@ modal-form__.span-link {
 }
 
 .mobile-menu__cont {
-  margin-top: 302px;
+  margin-top: 298px;
 }
 
 .mobile-cont__mail {
@@ -1058,6 +1058,8 @@ modal-form__.span-link {
 
 .wedo {
   background: #fff;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 @media screen and (max-width: 1199px) {
